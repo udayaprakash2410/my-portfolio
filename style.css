@@ -44,3 +44,84 @@ color:black;
 border-radius:20px;
 font-size:14px;
 }
+
+.research-card,
+.certificate-card,
+.achievement-card{
+background:#0f172a;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(56,189,248,0.3);
+transition:0.4s;
+box-shadow:0 0 25px rgba(56,189,248,0.2);
+}
+
+.research-card:hover,
+.certificate-card:hover,
+.achievement-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 35px rgba(56,189,248,0.5);
+}
+
+.research-icon,
+.achievement-icon{
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#38bdf8;
+color:black;
+font-size:30px;
+border-radius:50%;
+margin-bottom:20px;
+animation:pulse 2s infinite;
+}
+
+.certificate-icon{
+font-size:50px;
+margin-bottom:20px;
+color:#38bdf8;
+animation:float 3s ease-in-out infinite;
+}
+
+.certificate-badge{
+display:inline-block;
+padding:8px 18px;
+border-radius:20px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+font-size:14px;
+}
+
+.tag{
+padding:8px 18px;
+border-radius:20px;
+background:rgba(56,189,248,0.15);
+font-size:14px;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.1);
+}
+100%{
+transform:scale(1);
+}
+}
+
+@keyframes float{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-10px);
+}
+100%{
+transform:translateY(0px);
+}
+}
