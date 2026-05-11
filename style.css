@@ -303,3 +303,29 @@ transform:translateY(-10px);
 transform:translateY(0px);
 }
 }
+
+/* HERO SECTION MOBILE FIX */
+
+#home{
+padding-top:220px;
+min-height:100vh;
+}
+
+@media(min-width:768px){
+
+#home{
+padding-top:120px;
+}
+
+}
+
+/* MOBILE IMAGE FIX */
+
+@media(max-width:768px){
+
+#home img{
+width:260px;
+margin-top:20px;
+}
+
+}
