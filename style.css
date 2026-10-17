@@ -339,6 +339,84 @@ section:not(#home) > h2::after {
 }
 
 
+/* ===== TECHNICAL SKILLS ===== */
+
+#skills > p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.skill-category {
+  padding: 26px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(30, 41, 59, 0.75),
+    rgba(15, 23, 42, 0.95)
+  );
+  transition: transform 0.3s ease, border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 14px 35px rgba(56, 189, 248, 0.07);
+}
+
+.skill-category h3 {
+  color: #7dd3fc;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  color: #cbd5e1;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 9px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: color 0.25s ease, border-color 0.25s ease,
+              background 0.25s ease;
+}
+
+.skill:hover {
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.08);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+@media (max-width: 640px) {
+  .skill-category {
+    padding: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-category,
+  .skill {
+    transition: none;
+  }
+
+  .skill-category:hover {
+    transform: none;
+  }
+}
+
+
+
 /* ===== PREMIUM PROJECTS SECTION ===== */
 
 #projects {
